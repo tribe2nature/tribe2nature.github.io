@@ -289,7 +289,7 @@ Wenn Sie mehr zum Thema Verschlüsselung wissen möchten, empfehlen wir die Goog
 
 <p>Ausf&uuml;hrliche Informationen zu den Funktionen von MailerLite entnehmen Sie folgendem Link:&nbsp;<a href="https://www.mailerlite.com/features" rel="noopener noreferrer" target="_blank">https://www.mailerlite.com/features</a>.</p>
 
-<p>Die Datenschutzerkl&auml;rung von MailerLite finden Sie unter:&nbsp;<a href="https://www.mailerlite.com/legal/privacy-policy" rel="noopener noreferrer" target="_blank">https://www.mailerlite.com/legal/privacy-policy</a>.</p>![image](https://user-images.githubusercontent.com/119230543/206543374-aaf36e31-ea92-4436-a5e6-2600c9a95dd8.png)
+<p>Die Datenschutzerkl&auml;rung von MailerLite finden Sie unter:&nbsp;<a href="https://www.mailerlite.com/legal/privacy-policy" rel="noopener noreferrer" target="_blank">https://www.mailerlite.com/legal/privacy-policy</a>.</p>
 
 
 <h3 class="adsimple-312343284">Rechtsgrundlage</h3>
