@@ -1,0 +1,158 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturheilkunde & Evidenzbasierte Supplements | Autorenportal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f291e',
+                            primary: '#1c4d38',
+                            sage: '#87a987',
+                            light: '#f4f7f4',
+                            accent: '#d97706', // warmes Honig-Orange für Buttons
+                            accentHover: '#b45309'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-slate-800 font-sans antialiased">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-sage/20">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tight text-brand-dark">Natur<span class="text-brand-sage">Wissen</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#freebie" class="hover:text-brand-primary transition">Gratis-Guide</a>
+                <a href="#buecher" class="hover:text-brand-primary transition">Bücher</a>
+                <a href="/manuka-honig/" class="hover:text-brand-primary transition">Manuka Honig</a>
+                <a href="/cbd-handbuch/" class="hover:text-brand-primary transition">CBD Handbuch</a>
+                <a href="/astaxanthin/" class="hover:text-brand-primary transition">Astaxanthin</a>
+            </nav>
+            <a href="#freebie" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md transition transform hover:-translate-y-0.5">Freebie Holen</a>
+        </div>
+    </header>
+
+    <!-- Hero Section / Freebie Landingpage Component -->
+    <section id="freebie" class="relative bg-gradient-to-b from-brand-dark to-brand-primary text-white py-20 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-brand-sage/30 text-emerald-200 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Evidenzbasierte Naturheilkunde</span>
+                <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">Schluss mit Mythen: Die Top 5 Supplements mit klinischer Studienlage</h1>
+                <p class="text-emerald-100 text-lg mb-8 leading-relaxed">
+                    Lerne, welche natürlichen Stoffe Entzündungen wirksam lindern, das Immunsystem stärken und wie du minderwertige Präparate sofort erkennst.
+                </p>
+                
+                <!-- High-Conversion Opt-In Box -->
+                <div class="bg-white/10 p-6 rounded-2xl border border-white/20 backdrop-blur-sm shadow-xl">
+                    <p class="font-semibold text-white mb-3">Hol dir den exklusiven 25-Seiten PDF-Report kostenlos:</p>
+                    <form action="DEIN_NEWSLETTER_FORMULAR_URL" method="POST" class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Deine beste E-Mail-Adresse" required class="px-4 py-3 rounded-xl text-slate-800 focus:outline-none focus:ring-2 focus:ring-brand-accent w-full">
+                        <button type="submit" class="bg-brand-accent hover:bg-brand-accentHover text-white font-bold px-6 py-3 rounded-xl shadow-lg transition whitespace-nowrap">Jetzt herunterladen</button>
+                    </form>
+                    <p class="text-xs text-emerald-200/80 mt-3 flex items-center gap-1">
+                        🔒 100% kostenfrei. Kein Spam. Abmeldung jederzeit möglich.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Freebie Visual Mockup -->
+            <div class="relative flex justify-center">
+                <div class="w-72 h-96 bg-white text-slate-800 rounded-2xl shadow-2xl p-6 border-4 border-brand-sage flex flex-col justify-between transform rotate-2 hover:rotate-0 transition duration-300">
+                    <div class="border-b pb-4">
+                        <span class="text-xs font-bold text-brand-primary uppercase">Kostenfreier Report</span>
+                        <h3 class="text-xl font-bold text-brand-dark mt-1">Supplement Kompass</h3>
+                    </div>
+                    <div class="py-6 text-center">
+                        <span class="text-5xl">🌿</span>
+                        <p class="text-xs text-slate-500 mt-4">Analysen • Dosierungen • Studien</p>
+                    </div>
+                    <div class="bg-brand-light p-3 rounded-lg text-center text-xs font-semibold text-brand-dark">
+                        Wert: 19,90 € (Heute 0,00 €)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proof / Trust Banner -->
+    <section class="bg-white border-b py-8">
+        <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center items-center gap-8 md:gap-16 text-slate-400 font-semibold text-sm">
+            <span>✓ Über 100+ ausgewertete Studien</span>
+            <span>✓ Praxisnahe Dosierungsanleitungen</span>
+            <span>✓ Unabhängig & Ohne Sponsoring</span>
+        </div>
+    </section>
+
+    <!-- Bücher Showcase -->
+    <section id="buecher" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-brand-dark">Fundierte Fachliteratur für deine Gesundheit</h2>
+            <p class="text-slate-600 mt-4">Entdecke die detaillierten Ratgeber zu den wirkungsvollsten Substanzen der Natur – verständlich erklärt und durch wissenschaftliche Evidenz gestützt.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Buch 1: Manuka Honig -->
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden flex flex-col justify-between hover:shadow-xl transition">
+                <div class="p-8">
+                    <div class="h-48 bg-amber-50 rounded-xl flex items-center justify-center text-6xl mb-6">🍯</div>
+                    <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Antimikrobielles Wunder</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-2 mb-3">Manuka Honig</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Das flüssige Gold Neuseelands. Wie MGO gegen Magen-Darm-Beschwerden, Entzündungen und Infektionen wirkt.</p>
+                </div>
+                <div class="p-8 pt-0">
+                    <a href="/manuka-honig/" class="block text-center bg-brand-primary hover:bg-brand-dark text-white font-bold py-3 rounded-xl transition">Mehr erfahren & Buch ansehen</a>
+                </div>
+            </div>
+
+            <!-- Buch 2: CBD Handbuch -->
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden flex flex-col justify-between hover:shadow-xl transition">
+                <div class="p-8">
+                    <div class="h-48 bg-emerald-50 rounded-xl flex items-center justify-center text-6xl mb-6">🌱</div>
+                    <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Schmerz & Nervensystem</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-2 mb-3">Das CBD Handbuch</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Natürliche Hilfe bei Schlafstörungen, chronischen Schmerzen und Stress durch gezielte Aktivierung des Endocannabinoid-Systems.</p>
+                </div>
+                <div class="p-8 pt-0">
+                    <a href="/cbd-handbuch/" class="block text-center bg-brand-primary hover:bg-brand-dark text-white font-bold py-3 rounded-xl transition">Mehr erfahren & Buch ansehen</a>
+                </div>
+            </div>
+
+            <!-- Buch 3: Astaxanthin -->
+            <div class="bg-white rounded-2xl shadow-lg border border-slate-100 overflow-hidden flex flex-col justify-between hover:shadow-xl transition">
+                <div class="p-8">
+                    <div class="h-48 bg-rose-50 rounded-xl flex items-center justify-center text-6xl mb-6">🛡️</div>
+                    <span class="text-xs font-bold text-rose-600 uppercase tracking-wider">Zellschutz & Anti-Aging</span>
+                    <h3 class="text-2xl font-bold text-slate-900 mt-2 mb-3">Astaxanthin</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6">Das stärkste Antioxidans der Welt. Schutz vor freier Radikalbildung, Entzündungsschutz und maximale Zellregeneration.</p>
+                </div>
+                <div class="p-8 pt-0">
+                    <a href="/astaxanthin/" class="block text-center bg-brand-primary hover:bg-brand-dark text-white font-bold py-3 rounded-xl transition">Mehr erfahren & Buch ansehen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-brand-primary">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-sm">© 2026 NaturWissen Autorenmarke. Alle Rechte vorbehalten.</p>
+            <div class="flex space-x-6 text-sm">
+                <a href="/impressum/" class="hover:text-white transition">Impressum</a>
+                <a href="/datenschutz/" class="hover:text-white transition">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
