@@ -6,7 +6,7 @@ layout: null
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naturheilkunde & Evidenzbasierte Supplements | Autorenportal</title>
+    <title>Nature & Superfoods Tribe | Evidenzbasierte Ratgeber</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -14,12 +14,12 @@ layout: null
                 extend: {
                     colors: {
                         brand: {
-                            dark: '#0f291e',
-                            primary: '#1c4d38',
-                            sage: '#87a987',
-                            light: '#f4f7f4',
-                            accent: '#d97706', // warmes Honig-Orange für Buttons
-                            accentHover: '#b45309'
+                            dark: '#1a1a1a',       // Dunkler Schattenton aus dem Logo
+                            leaf: '#65a338',       // Frisches Blatt-Grün aus dem Logo
+                            leafHover: '#52872b',
+                            drop: '#d94738',       // Tropfen-Rot/Terracotta für High-Conversion CTA
+                            dropHover: '#b83427',
+                            light: '#f8faf7'       // Sanfter, natürlicher Hintergrund
                         }
                     }
                 }
@@ -30,20 +30,54 @@ layout: null
 <body class="bg-brand-light text-slate-800 font-sans antialiased">
 
     <!-- Header Navigation -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-sage/20">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold tracking-tight text-brand-dark">Natur<span class="text-brand-sage">Wissen</span></a>
-            <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#freebie" class="hover:text-brand-primary transition">Gratis-Guide</a>
-                <a href="#buecher" class="hover:text-brand-primary transition">Bücher</a>
-                <a href="/manuka-honig/" class="hover:text-brand-primary transition">Manuka Honig</a>
-                <a href="/cbd-handbuch/" class="hover:text-brand-primary transition">CBD Handbuch</a>
-                <a href="/astaxanthin/" class="hover:text-brand-primary transition">Astaxanthin</a>
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+            
+            <!-- Logo & Brand Title -->
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="/logo.png" alt="Nature & Superfoods Tribe Logo" class="h-10 w-auto transition-transform duration-300 group-hover:scale-105">
+                <span class="text-xl font-extrabold tracking-tight text-brand-dark">
+                    nature <span class="text-brand-leaf">&</span> superfoods <span class="text-brand-leaf font-black">Tribe</span>
+                </span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                
+                <!-- Bücher Dropdown Menu -->
+                <div class="relative group py-2">
+                    <button class="flex items-center gap-1 hover:text-brand-leaf transition focus:outline-none">
+                        <span>Bücher</span>
+                        <svg class="w-4 h-4 text-slate-400 group-hover:text-brand-leaf transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown List -->
+                    <div class="absolute left-0 mt-2 w-64 bg-white rounded-2xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2 p-2 z-50">
+                        <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-3 py-1">Unsere Bestseller</div>
+                        <a href="/manuka-honig/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">Manuka Honig</a>
+                        <a href="/cbd-handbuch/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">CBD Handbuch</a>
+                        <a href="/astaxanthin/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">Astaxanthin</a>
+                        <a href="/cbd-dmso-borax/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">CBD - DMSO - Borax</a>
+                        <a href="/dmso-opc-kolloidales-silber/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">DMSO - OPC - Silber</a>
+                        <a href="/natron/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">Natron</a>
+                        <a href="/vitamin-k2/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">Vitamin K2</a>
+                        <a href="/borax/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">Borax</a>
+                        <a href="/lektine/" class="block px-3 py-2 rounded-xl text-slate-700 hover:bg-brand-light hover:text-brand-leaf font-medium transition">Lektine</a>
+                    </div>
+                </div>
+
             </nav>
-            <a href="#freebie" class="bg-brand-accent hover:bg-brand-accentHover text-white px-5 py-2.5 rounded-full text-sm font-bold shadow-md transition transform hover:-translate-y-0.5">Freebie Holen</a>
+
+            <!-- High-Conversion CTA Button -->
+            <a href="#freebie" class="bg-brand-drop hover:bg-brand-dropHover text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md shadow-brand-drop/20 hover:shadow-lg transition transform hover:-translate-y-0.5">
+                Jetzt Gratis-Buch sichern
+            </a>
+
         </div>
     </header>
-
+    
     <!-- Hero Section / Freebie Landingpage Component -->
     <section id="freebie" class="relative bg-gradient-to-b from-brand-dark to-brand-primary text-white py-20 px-6">
         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
