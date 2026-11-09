@@ -23,29 +23,25 @@
             }
         }
     </script>
-    <style>
-        /* MailerLite Loader Animation */
-        .ml-form-embedSubmitLoad {
-            display: inline-block;
-            width: 20px;
-            height: 20px;
-        }
-        .ml-form-embedSubmitLoad:after {
-            content: " ";
-            display: block;
-            width: 12px;
-            height: 12px;
-            margin: 1px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            border-color: #ffffff #ffffff #ffffff transparent;
-            animation: ml-form-embedSubmitLoad 1.2s linear infinite;
-        }
-        @keyframes ml-form-embedSubmitLoad {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+    <!-- Sender.net Universal Script im Head -->
+    <script>
+      (function (s, e, n, d, er) {
+        s['Sender'] = er;
+        s[er] = s[er] || function () {
+          (s[er].q = s[er].q || []).push(arguments)
+        }, s[er].l = 1 * new Date();
+        s[er].on = function(event, callback) {
+          s[er].listeners = s[er].listeners || {};
+          (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+        };
+        var a = e.createElement(n),
+            m = e.getElementsByTagName(n)[0];
+        a.async = 1;
+        a.src = d;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+      sender('5b27beb63e3994')
+    </script>
 </head>
 <body class="bg-brand-light text-slate-800 font-sans antialiased">
 
@@ -109,62 +105,27 @@
             <div class="lg:col-span-5" id="freebie">
                 <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-200/80 relative">
                     
-                    <div class="absolute -top-3 right-6 bg-brand-accent text-white text-xs font-extrabold uppercase px-3 py-1 rounded-full shadow">
+                    <div class="absolute -top-3 right-6 bg-brand-accent text-white text-xs font-extrabold uppercase px-3 py-1 rounded-full shadow z-10">
                         Sofort-Download
                     </div>
 
-                    <!-- MailerLite Form Embed Container -->
-                    <div id="mlb2-46035501" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-46035501">
-                        
-                        <!-- Opt-In Body -->
-                        <div class="row-form">
-                            <h2 class="text-2xl font-bold text-slate-900 mb-2">
-                                Jetzt E-Book gratis anfordern
-                            </h2>
-                            <p class="text-sm text-slate-600 mb-6">
-                                Trage einfach deine E-Mail-Adresse ein und du erhältst das digitale Buch sofort kostenlos zugeschickt.
-                            </p>
-
-                            <form class="ml-block-form space-y-4" action="https://assets.mailerlite.com/jsonp/244334/forms/198850619430143960/subscribe" data-code="" method="post" target="_blank">
-                                <div>
-                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Vorname (Optional)</label>
-                                    <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-accent focus:border-brand-accent outline-none text-sm transition" name="fields[name]" placeholder="Dein Name" autocomplete="given-name">
-                                </div>
-                                
-                                <div>
-                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">E-Mail-Adresse *</label>
-                                    <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-accent focus:border-brand-accent outline-none text-sm transition" name="fields[email]" placeholder="Email Adresse" autocomplete="email">
-                                </div>
-
-                                <input type="hidden" name="ml-submit" value="1">
-                                <input type="hidden" name="anticsrf" value="true">
-
-                                <div class="ml-form-embedSubmit pt-2">
-                                    <button type="submit" class="primary w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold py-4 rounded-xl shadow-lg shadow-brand-accent/30 transition transform hover:-translate-y-0.5 text-center text-base">
-                                        👉 Jetzt Gratis-Buch sichern
-                                    </button>
-                                    <button disabled="disabled" style="display: none;" type="button" class="loading w-full bg-brand-accent text-white font-bold py-4 rounded-xl opacity-75 flex justify-center items-center gap-2">
-                                        <div class="ml-form-embedSubmitLoad"></div>
-                                        <span>Wird gesendet...</span>
-                                    </button>
-                                </div>
-
-                                <p class="text-[11px] text-slate-400 text-center leading-tight mt-3">
-                                    🔒 100% Datenschutz. Kein Spam. Du kannst dich jederzeit abmelden.
-                                </p>
-                            </form>
-                        </div>
-
-                        <!-- Success Message (Wird nach Absenden von MailerLite Script eingeblendet) -->
-                        <div class="row-success text-center py-6 space-y-3" style="display: none">
-                            <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
-                            <h3 class="text-2xl font-bold text-slate-900">Vielen Dank für die Anmeldung!</h3>
-                            <p class="text-sm text-slate-600">
-                                Du hast eine E-Mail bekommen. Bitte überprüfe dein Postfach oder deinen Spam-Ordner, um deine E-Mail-Adresse zu bestätigen.
-                            </p>
-                        </div>
-
+                    <!-- Überschrift & Intro für das Formular -->
+                    <div class="mb-4">
+                        <h2 class="text-2xl font-bold text-slate-900 mb-2">
+                            Jetzt E-Book gratis anfordern
+                        </h2>
+                        <p class="text-sm text-slate-600">
+                            Trage einfach deine E-Mail-Adresse ein und du erhältst das digitale Buch sofort kostenlos zugeschickt.
+                        </p>
                     </div>
+
+                    <!-- Sender.net Form Embed Container -->
+                    <div style="text-align: left" class="sender-form-field" data-sender-form-id="epYxxr"></div>
+
+                    <p class="text-[11px] text-slate-400 text-center leading-tight mt-4">
+                        🔒 100% Datenschutz. Kein Spam. Du kannst dich jederzeit abmelden.
+                    </p>
+
                 </div>
             </div>
 
@@ -179,19 +140,6 @@
             <a href="/datenschutz/" class="hover:underline">Datenschutz</a>
         </div>
     </footer>
-
-    <!-- MailerLite Skripte für AJAX Formular-Versand -->
-    <script>
-        function ml_webform_success_46035501() {
-            var $ = ml_jQuery || jQuery;
-            $('.ml-subscribe-form-46035501 .row-success').show();
-            $('.ml-subscribe-form-46035501 .row-form').hide();
-        }
-    </script>
-    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
-    <script>
-        fetch("https://assets.mailerlite.com/jsonp/244334/forms/198850619430143960/takel");
-    </script>
 
 </body>
 </html>
